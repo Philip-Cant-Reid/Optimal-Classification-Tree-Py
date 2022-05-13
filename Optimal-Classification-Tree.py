@@ -634,7 +634,7 @@ def random_node_modification(tree, dataFrame, n_min = 1, D_max = 5, alpha = 0.5)
     while get_random_node(tree):
         
         # Pick random unchecked node for modification
-        node = tree#get_random_node(tree)
+        node = get_random_node(tree)
             
         # Get data frame at specific node
         dataFrameNode = data_values(node,dataFrame)
